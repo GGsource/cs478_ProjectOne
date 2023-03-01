@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,7 +8,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to Activity 2!"
+        android:text="@string/welcome_to_activity_2"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,7 +21,7 @@
         android:id="@+id/btnReturn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Return"
+        android:text="@string/returnTxt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -35,19 +34,20 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="phone"
-        android:hint="Phone number here..."
+        android:hint="@string/phone_number_here"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="AUTOFILL_HINT_PHONE_NUMBER" />
 
     <TextView
         android:id="@+id/textViewPhoneInstructions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please enter a phone number in the field below!"
-        android:textSize="40px"
+        android:text="@string/please_enter_a_phone_number_in_the_field_below"
+        android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextPhoneNum"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
