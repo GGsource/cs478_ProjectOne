@@ -18,12 +18,7 @@ public class SecondActivity extends AppCompatActivity {
 
         btnReturn = findViewById(R.id.btnReturn);
 
-        btnReturn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
+        btnReturn.setOnClickListener(view -> onBackPressed());
     }
 
     @Override
@@ -33,7 +28,15 @@ public class SecondActivity extends AppCompatActivity {
         String phoneNum = numField.getText().toString();
         Intent intentPhone = getIntent();
         intentPhone.putExtra("phoneInfo", phoneNum);
-        setResult(RESULT_OK, intentPhone);
+        if (isValidPhoneNum(phoneNum)) {
+            setResult(RESULT_OK, intentPhone);
+        } else {
+            setResult(RESULT_CANCELED);
+        }
         finish();
+    }
+
+    public boolean isValidPhoneNum(String givenNum) {
+        return true;
     }
 }
