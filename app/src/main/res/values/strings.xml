@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">ProjectOne</string>
+    <string name="app_name">CS 478: Project One</string>
     <string name="welcome_to_activity_2">Welcome to Activity 2!</string>
     <string name="returnTxt">Return</string>
-    <string name="phone_number_here">Phone number here</string>
-    <string name="please_enter_a_phone_number_in_the_field_below">Please enter a phone number in the field below!</string>
+    <string name="phone_number_here">type phone here…</string>
+    <string name="pls_enter">Please enter a phone number in the field below!</string>
     <string name="button_two">Button Two</string>
     <string name="button_one">Button One</string>
     <string name="welcome">Welcome to CS 478 Project One!</string>
